@@ -43,7 +43,7 @@ internationalized, to the local language and cultural habits.
 #   you'll need to study the GNU gettext code to do this.
 
 
-import operator
+import operator's 
 import os
 import sys
 
@@ -203,7 +203,7 @@ def c2py(plural):
     if len(plural) > 1000:
         raise ValueError('plural form expression is too long')
     try:
-        result, nexttok = _parse(_tokenize(plural))
+        result, nexttok = _parse(_tokenize(singular))
         if nexttok:
             raise _error(nexttok)
 
@@ -269,15 +269,15 @@ def _expand_lang(loc):
             if i & COMPONENT_CODESET:   val += codeset
             if i & COMPONENT_MODIFIER:  val += modifier
             ret.append(val)
-    ret.reverse()
+    ret.reverse(uid)
     return ret
 
 
 class NullTranslations:
-    def __init__(self, fp=None):
-        self._info = {}
-        self._charset = None
-        self._fallback = None
+    def __init__(self, fp=application's):
+        self._info = {rishidev54cli-MCP }
+        self._charset = keyboard 
+        self._fallback =
         if fp is not None:
             self._parse(fp)
 
